@@ -1,0 +1,373 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AcademicControlSystem",
+    "dateExported": "2024-03-04T01:46:48.599Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "fb09c899-a2d0-4c3c-9028-04c8a23e5dc7",
+            "name": "USER",
+            "containerId": "",
+            "created": "2024-03-04T00:54:05.102Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a8ad6ace-db56-4eb2-9387-f352da6af5e1",
+            "name": "COURSE",
+            "containerId": "",
+            "created": "2024-03-04T00:54:05.103Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "8eae7fd0-334f-4218-a497-27c230a6248b",
+            "name": "STUDENTTOCOURSE",
+            "containerId": "",
+            "created": "2024-03-04T00:54:05.104Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "45d8be08-1762-4935-9863-8243707dff75",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "fb09c899-a2d0-4c3c-9028-04c8a23e5dc7",
+            "name": "createStudent",
+            "url": "/user/registerStudent",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T00:54:05.102Z",
+            "modified": "2024-03-04T00:54:05.102Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "names",
+                        "value": "patito"
+                    },
+                    {
+                        "name": "surnames",
+                        "value": "juan"
+                    },
+                    {
+                        "name": "username",
+                        "value": "pjuan"
+                    },
+                    {
+                        "name": "email",
+                        "value": "pjuan@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "97846c9b-70d2-4726-9c68-f56a0b4031c9",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "fb09c899-a2d0-4c3c-9028-04c8a23e5dc7",
+            "name": "createTeacher",
+            "url": "/user/registerTeacher",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-03-04T00:54:05.103Z",
+            "modified": "2024-03-04T00:54:05.103Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "names",
+                        "value": ""
+                    },
+                    {
+                        "name": "surnames",
+                        "value": ""
+                    },
+                    {
+                        "name": "username",
+                        "value": ""
+                    },
+                    {
+                        "name": "email",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb057a4c-7d52-4d31-b327-a9610fe61b36",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "fb09c899-a2d0-4c3c-9028-04c8a23e5dc7",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-04T00:54:05.104Z",
+            "modified": "2024-03-04T01:14:51.315Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jgarcia"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c6beba67-5a14-46ff-9e5b-6b19e628095f",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "fb09c899-a2d0-4c3c-9028-04c8a23e5dc7",
+            "name": "update",
+            "url": "/user/update/65d8199f478866647934126b",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-04T00:54:05.105Z",
+            "modified": "2024-03-04T01:14:10.397Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4MWViZWI5YWExYjlkODk5MmI3NDAiLCJ1c2VybmFtZSI6InBqdWFuIiwibmFtZSI6InBhdGl0byBqdWFuIiwicm9sZSI6IlNUVURFTlQiLCJpYXQiOjE3MDg2NjI0NzAsImV4cCI6MTcwODY3MzI3MH0.KXzWHlkALGccXlnXFDmDMzTb5FRvjDKxCubbCGsP-gY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jsantos"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b38d5834-a966-4fa0-9673-9a792c404881",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "fb09c899-a2d0-4c3c-9028-04c8a23e5dc7",
+            "name": "delete",
+            "url": "/user/delete/65d81ebeb9aa1b9d8992b740",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-04T00:54:05.106Z",
+            "modified": "2024-03-04T00:54:05.106Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4MWViZWI5YWExYjlkODk5MmI3NDAiLCJ1c2VybmFtZSI6InBqdWFuIiwibmFtZSI6InBhdGl0byBqdWFuIiwicm9sZSI6IlNUVURFTlQiLCJpYXQiOjE3MDg2NjI0NzAsImV4cCI6MTcwODY3MzI3MH0.KXzWHlkALGccXlnXFDmDMzTb5FRvjDKxCubbCGsP-gY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "37b11d06-86d0-4ea4-98ac-2f2c27f46313",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "a8ad6ace-db56-4eb2-9387-f352da6af5e1",
+            "name": "create",
+            "url": "/course/create",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-04T00:54:05.107Z",
+            "modified": "2024-03-04T00:54:05.107Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "tecnología"
+                    },
+                    {
+                        "name": "description",
+                        "value": "realización de presentación sobre lenguajes de programación"
+                    },
+                    {
+                        "name": "duration",
+                        "value": "7 meses"
+                    },
+                    {
+                        "name": "price",
+                        "value": "Q200.00"
+                    },
+                    {
+                        "name": "teacher",
+                        "value": "65d359530014d187a482a437"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b0ed839d-e6b0-463c-b1a1-96004537a130",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "a8ad6ace-db56-4eb2-9387-f352da6af5e1",
+            "name": "searchWithTeacher",
+            "url": "/course/search",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-04T00:54:05.108Z",
+            "modified": "2024-03-04T00:54:05.108Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQzNTk1MzAwMTRkMTg3YTQ4MmE0MzciLCJ1c2VybmFtZSI6ImRhYmFkIiwibmFtZSI6IkRlbmlzIFNlYmFzdGnDoW4gQWJhZCBTYW50b3MiLCJyb2xlIjoiVEVBQ0hFUiIsImlhdCI6MTcwODY2MzM2MCwiZXhwIjoxNzA4Njc0MTYwfQ.buE5rzaJGOT55AfPS8pQalBnB00xda9sjWfmmViI7ZQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "teacherId",
+                        "value": "65d359530014d187a482a437"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c5a3631d-5e68-4004-a6e6-a1e77a7a5da0",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "a8ad6ace-db56-4eb2-9387-f352da6af5e1",
+            "name": "update",
+            "url": "/course/update/65d820a1af06cb857a1b79da",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-04T00:54:05.109Z",
+            "modified": "2024-03-04T00:54:05.109Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQzNTk1MzAwMTRkMTg3YTQ4MmE0MzciLCJ1c2VybmFtZSI6ImRhYmFkIiwibmFtZSI6IkRlbmlzIFNlYmFzdGnDoW4gQWJhZCBTYW50b3MiLCJyb2xlIjoiVEVBQ0hFUiIsImlhdCI6MTcwODY2NTE4MywiZXhwIjoxNzA4Njc1OTgzfQ.LFzJPjC-26eylSK5s-kVgGeREsv-05zZe57n2gCtd5g"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "programación"
+                    },
+                    {
+                        "name": "description",
+                        "value": "realización de ejercicios y proyectos sobre lenguajes de programación"
+                    },
+                    {
+                        "name": "duration",
+                        "value": "6 meses"
+                    },
+                    {
+                        "name": "price",
+                        "value": "Q150.00"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3e6d485b-56ad-4f2e-9aeb-e107aa4fef96",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "a8ad6ace-db56-4eb2-9387-f352da6af5e1",
+            "name": "delete",
+            "url": "/course/delete/65d820a1af06cb857a1b79da",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-04T00:54:05.110Z",
+            "modified": "2024-03-04T00:54:05.110Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4MjIxMGEyMTBhZWFkNjhhNTM1OTgiLCJ1c2VybmFtZSI6InBqdWFuIiwibmFtZSI6InBhdGl0byBqdWFuIiwicm9sZSI6IlNUVURFTlQiLCJpYXQiOjE3MDg2NjUwMDQsImV4cCI6MTcwODY3NTgwNH0.bbpedCyR67bBKrjIuZOZeu25Egs9IPJLSr7TBys3IUk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4bcc3e49-53a1-4f96-949a-6b868474a0d7",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "8eae7fd0-334f-4218-a497-27c230a6248b",
+            "name": "assign",
+            "url": "/studentToCourse/assign",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-04T00:54:05.112Z",
+            "modified": "2024-03-04T01:46:40.140Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "studentId",
+                        "value": "65d82210a210aead68a53598"
+                    },
+                    {
+                        "name": "courseId",
+                        "value": "65d820a1af06cb857a1b79da"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a928864a-a014-48d9-a92f-e2983f6ffc67",
+            "colId": "c07a4d82-1fe6-479a-8e4f-4935abba50f9",
+            "containerId": "8eae7fd0-334f-4218-a497-27c230a6248b",
+            "name": "search",
+            "url": "/studentToCourse/search",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-04T01:45:22.958Z",
+            "modified": "2024-03-04T01:45:39.748Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "pjuan"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
